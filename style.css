@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  width: 80%;
+  height: 100vh;
+  margin-inline: auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+main{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 6.5rem;
+}
+
+/* HEADING  */
+
+.count_heading{
+  font-size: 3.95rem;
+  color: #406c85 ;
+  font-weight: 700;
+}
+
+/* DYNAMIC RESULT  */
+
+.display_result{
+  font-size: 6.95rem;
+  font-weight: 500;
+  color: #000;
+}
+
+/* BUTTONS STYLE  */
+
+.btn{
+  padding: 0.25rem 0.5rem;
+  font-size: 1.15rem;
+  font-family: inherit;
+  font-weight: 500;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 0.35rem;
+  transition: all 0.2s linear;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.btn_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media only screen and (min-width: 768px){
+
+  .count_heading{
+    font-size: 5.95rem;
+  }
+
+  
+  .display_result{
+    font-size: 7.95rem;
+    font-weight: 600;
+  }
+
+  .btn{
+    padding: 0.45rem 0.7rem;
+    font-size: 2.15rem;
+    font-family: inherit;
+    font-weight: 500;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 0.35rem;
+  }
+
+  main{
+    gap: 1.5rem;
+  }
+  
+}
